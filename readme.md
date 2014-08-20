@@ -15,3 +15,21 @@
  
 [我的博客](http://bifidycaps.tk)
 
+>大脸猫爱吃鱼
+>##任务一应该完成了.
+>1. 我是完成的
+>2. 我绝对完成了.
+
+- Red
+- Blue
+
+* 让我显示一段代码:
+	<NSLog:@"Hello world!";>
+
+***
+>我是分割线
+***
+
+####让开我要放链接了!
+[百度]: http://baidu.com/	"baidu"
+[1]:http://map.baidu.com/	"百度地图"
