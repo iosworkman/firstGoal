@@ -21,7 +21,6 @@
 		109E13C219A39FB5009CC528 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109E13A419A39FB5009CC528 /* UIKit.framework */; };
 		109E13CA19A39FB5009CC528 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 109E13C819A39FB5009CC528 /* InfoPlist.strings */; };
 		109E13CC19A39FB5009CC528 /* firstGoalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E13CB19A39FB5009CC528 /* firstGoalTests.m */; };
-		2F8FC80519AA3352008BAE0D /* BCChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FC80419AA3352008BAE0D /* BCChildController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		109E13C719A39FB5009CC528 /* firstGoalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "firstGoalTests-Info.plist"; sourceTree = "<group>"; };
 		109E13C919A39FB5009CC528 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		109E13CB19A39FB5009CC528 /* firstGoalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = firstGoalTests.m; sourceTree = "<group>"; };
-		2F8FC80319AA3352008BAE0D /* BCChildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCChildController.h; sourceTree = "<group>"; };
-		2F8FC80419AA3352008BAE0D /* BCChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCChildController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +117,6 @@
 				109E13B219A39FB5009CC528 /* Main.storyboard */,
 				109E13B519A39FB5009CC528 /* BCViewController.h */,
 				109E13B619A39FB5009CC528 /* BCViewController.m */,
-				2F8FC80319AA3352008BAE0D /* BCChildController.h */,
-				2F8FC80419AA3352008BAE0D /* BCChildController.m */,
 				109E13B819A39FB5009CC528 /* Images.xcassets */,
 				109E13A719A39FB5009CC528 /* Supporting Files */,
 			);
@@ -258,7 +253,6 @@
 				109E13B719A39FB5009CC528 /* BCViewController.m in Sources */,
 				109E13AD19A39FB5009CC528 /* main.m in Sources */,
 				109E13B119A39FB5009CC528 /* BCAppDelegate.m in Sources */,
-				2F8FC80519AA3352008BAE0D /* BCChildController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

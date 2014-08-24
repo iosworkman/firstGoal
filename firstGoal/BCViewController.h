@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BCChildController.h"
-@interface BCViewController : UIViewController<viewDelegate>
-@property (nonatomic,weak)IBOutlet UILabel *label;
-@property (nonatomic,weak)IBOutlet UITextField *field;
--(IBAction)click:(id)sender;
+@interface BCViewController : UIViewController
+
 @end

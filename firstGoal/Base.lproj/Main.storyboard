@@ -39,7 +39,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RAs-NT-knx"/>
+                                    <action selector="clickInParent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xjq-Yy-Mea"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Controller A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scp-vP-y3V">
@@ -63,7 +63,7 @@
         <!--VCB-->
         <scene sceneID="y8u-1H-aZj">
             <objects>
-                <viewController storyboardIdentifier="childVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bzy-dG-3p1" userLabel="VCB" customClass="BCChildController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="childVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bzy-dG-3p1" userLabel="VCB" customClass="BCViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1q7-va-75a"/>
                         <viewControllerLayoutGuide type="bottom" id="0vY-68-4Os"/>
@@ -95,7 +95,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click:" destination="bzy-dG-3p1" eventType="touchUpInside" id="tgY-e8-NVI"/>
+                                    <action selector="clickInChild:" destination="bzy-dG-3p1" eventType="touchUpInside" id="kVB-ii-pgN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Controller B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSJ-ro-9aX">
@@ -108,8 +108,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="field" destination="ndN-8E-vdo" id="ZaL-9j-k2r"/>
-                        <outlet property="label" destination="CUJ-iq-Fhy" id="sWt-Bi-wpK"/>
+                        <outlet property="field" destination="ndN-8E-vdo" id="mim-8d-Xqg"/>
+                        <outlet property="label" destination="CUJ-iq-Fhy" id="OZ3-1Y-Hp4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuV-Wg-eOF" sceneMemberID="firstResponder"/>

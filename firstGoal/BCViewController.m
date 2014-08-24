@@ -9,7 +9,10 @@
 #import "BCViewController.h"
 
 @interface BCViewController ()
-@property(nonatomic,strong)BCChildController *childVC;
+@property (nonatomic,weak)IBOutlet UILabel *label;
+@property (nonatomic,weak)IBOutlet UITextField *field;
+@property(nonatomic,strong)BCViewController *childVC;
+@property(nonatomic,weak)BCViewController *parentVC;
 @end
 
 @implementation BCViewController
@@ -18,39 +21,39 @@
     [super viewDidLoad];
     //添加键盘收回
     [self.field addTarget:_field action:@selector(resignFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
-    [self.childVC.field addTarget:self.childVC.field action:@selector(resignFirstResponder) forControlEvents:UIControlEventEditingDidEndOnExit];
 }
 
-//点击赋值
--(IBAction)click:(id)sender{
+//视图A的点击触发
+-(IBAction)clickInParent:(id)sender{
     //completion是block参数，在跳转成功后的执行代码
     [self presentViewController:self.childVC animated:YES completion:^{
     self.childVC.label.text = self.field.text;
     }];
 }
 
-//作为childVC的代理方法实现
--(void)refresh{
-    [self.childVC dismissViewControllerAnimated:YES completion:^{
-    self.label.text = self.childVC.field.text;
+//视图B的点击触发
+-(IBAction)clickInChild:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:^{
+    self.parentVC.label.text = self.field.text;
     }];
 }
 
 //延迟实例化，两个效果不同，自己参考~
--(BCChildController *)childVC{
+-(BCViewController *)childVC{
     if(_childVC==nil) {
         _childVC = [self.storyboard instantiateViewControllerWithIdentifier:@"childVC"];
-        _childVC.parentView = self;
+        _childVC.parentVC = self;
     }
     return _childVC;
 }
-/*
+
 //静态单例
+/*
 -(BCChildController *)childVC{
     static BCChildController *VC = nil;
     if (!VC) {
         VC = [self.storyboard instantiateViewControllerWithIdentifier:@"childVC"];
-        VC.parentView = self;
+        VC.parentVC = self;
     }
     return VC;
  
